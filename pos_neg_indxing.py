@@ -23,3 +23,21 @@ print(f"Elements from index -4 to -2 (negative indexing): {fruits[-4:-1]}")  # E
 print("\nAccessing a Sublist Using Both Indexing Types:")
 positive_negative_slice = fruits[1:-1]  # Positive indexing start, negative indexing end
 print(f"Sublist from index 1 to the second-to-last: {positive_negative_slice}")  # banana, cherry, date
+
+
+Positive Indexing:
+Element at index 0 (first element): apple
+Element at index 1 (second element): banana
+Element at index 4 (fifth element): elderberry
+
+Negative Indexing:
+Element at index -1 (last element): elderberry
+Element at index -2 (second-to-last element): date
+Element at index -4 (fourth-to-last element): banana
+
+Positive and Negative Indexing with Slicing:
+Elements from index 1 to 3 (positive indexing): ['banana', 'cherry', 'date']
+Elements from index -4 to -2 (negative indexing): ['banana', 'cherry', 'date']
+
+Accessing a Sublist Using Both Indexing Types:
+Sublist from index 1 to the second-to-last: ['banana', 'cherry', 'date']
