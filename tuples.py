@@ -89,7 +89,4 @@ for item in tup1:
     print(item, end=" ")
 
 # Immutable Property Test
-try:
-    tup1[0] = 100  # This will raise an error
-except TypeError as e:
-    print("\nTuples are immutable:", e)
+
