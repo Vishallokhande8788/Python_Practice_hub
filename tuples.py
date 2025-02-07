@@ -88,5 +88,4 @@ print("Looping through tuple:")
 for item in tup1:
     print(item, end=" ")
 
-# Immutable Property Test
 
