@@ -28,5 +28,5 @@ print(f"Your height (as float): {user_height}")
 new_height = user_height + 0.2
 print(f"After growing 0.2 meters, your height will be {new_height} meters.")
 
-# 6. Combining both age and height for a fun message:
+# 6. Combining both age and height for a fun message
 print(f"Hello, {user_age} years old, {user_height} meters tall person!")
