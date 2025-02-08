@@ -62,4 +62,3 @@ print("Type of 'fruits':", type(fruits))  # <class 'list'>
 print("Type of 'coordinates':", type(coordinates))  # <class 'tuple'>
 print("Type of 'person':", type(person))  # <class 'dict'>
 print("Type of 'colors':", type(colors))  # <class 'set'>
-print("Type of 'nothing':", type(nothing))  # <class 'NoneType'>
