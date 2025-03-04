@@ -52,5 +52,16 @@
 
 #  lambda function:
 
+# x=f1
+# print(id(x))
+# print(id(f1))
 
+# print(x(8))
+
+
+a = lambda a ,b : a+b
+s = lambda a,b : a-b
+
+print(a(5,6))
+print(s(18,6))
 
