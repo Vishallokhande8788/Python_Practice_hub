@@ -59,9 +59,29 @@
 # print(x(8))
 
 
-a = lambda a ,b : a+b
-s = lambda a,b : a-b
+# a = lambda a ,b : a+b
+# s = lambda a,b : a-b
 
-print(a(5,6))
-print(s(18,6))
+# print(a(5,6))
+# print(s(18,6))
+
+# a = lambda a  : a**2
+# print(a(5))
+
+# b = lambda a: a[::-1]
+# print(b('hello'))
+
+# c = lambda a,b:len(a)+len(b)
+# print(c('hello ','vishal sir'))
+
+# def multiplier (num):
+#     return lambda x : x*num
+
+# multiply_by_2 = multiplier(2)
+# multiply_by_4 = multiplier(4)
+# multiply_by_6 = multiplier(6)
+
+# print(multiply_by_2(5))
+# print(multiply_by_4(5))
+# print(multiply_by_6(5))
 
