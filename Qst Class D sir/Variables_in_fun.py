@@ -45,6 +45,7 @@
 # f2()
 
 # # globl to local variable acces using global function 
+## It accesses a global variable using `globals()` while referencing a local variable.
 
 # a = 100
 # def f1():
@@ -65,7 +66,15 @@
 
 
 
-
+# e.g.
+# a = 10
+# b = 20
+# def f1():
+#     a = 100
+#     b = 200
+#     print(a+b)
+#     print(globals()['a']+globals()['b'])
+# f1()
 
 
 # # 2 . local variables
