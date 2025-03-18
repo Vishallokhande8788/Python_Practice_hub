@@ -61,3 +61,34 @@
 # ZigZag(30)
 # ZigZag(7 )
 
+## 18/03/2025
+
+## map(): if we want to perform some common operations on each and every element present inside in a sequence
+
+# # map(fun , sequence):
+# # where fun is used to writting mapping logic and sequence may list , tuple , set ,....?
+
+# def Double (num):
+        # return num*2
+
+# l= [1,2,3,4,5,6,7,8,9,10]
+# output = list(map(Double , l))
+# print(output)
+
+# l = [1,2,3,4,5,6,7,8,9,10]
+# output = tuple(map(lambda x : x*2 , l))
+# print(output)
+
+# output = set(map(lambda x : x*2 , l))
+# print(output)
+# # eg :
+# friendNames = ["Vishal", "shubham", "bhagesh", "Akshay", "sushil", "Yes"]
+
+# DeveloperNames = list(map(lambda name: name + " developer", friendNames))
+
+# print(DeveloperNames)
+
+# friendNames = ["Vishal", "shubham", "bhagesh", "Akshay", "sushil", "Yes"]
+
+# filterDevloperNames = list(filter(lambda name: len(name) % 2 == 0, friendNames))
+# print(filterDevloperNames)
