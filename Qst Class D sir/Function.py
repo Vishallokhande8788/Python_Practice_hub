@@ -92,3 +92,41 @@
 
 # filterDevloperNames = list(filter(lambda name: len(name) % 2 == 0, friendNames))
 # print(filterDevloperNames)
+
+# #  eg : take string from user and print owels presemt in using ilter function
+
+# userInput = input("Enter a string: ")
+
+# filterString = list(filter(lambda x: x in 'aeiouAEIOU', userInput))
+
+# print(filterString)
+
+# eg filter on bases on category
+productList = [
+    {
+    "ProductId":1,
+    "ProductName":"iPhone",
+    "Price":10000,
+    "Category":"Mobile",
+    },
+    {"productId":2,
+     "ProductName":"Samsung",
+     "Price":20000,
+     "Category":"Mobile",
+     },
+     {"productId":3,
+      "ProductName":"Dell",
+      "Price":30000,
+      "Category":"Laptop",
+      },
+      {"productId":4,
+       "ProductName":"HP",
+       "Price":40000,
+       "Category":"Laptop",
+       }
+
+    ]
+
+filterProducts = list(filter(lambda Products: Products["Category"] == "Mobile", productList))
+print(filterProducts)
+
