@@ -101,32 +101,41 @@
 
 # print(filterString)
 
-# eg filter on bases on category
-productList = [
-    {
-    "ProductId":1,
-    "ProductName":"iPhone",
-    "Price":10000,
-    "Category":"Mobile",
-    },
-    {"productId":2,
-     "ProductName":"Samsung",
-     "Price":20000,
-     "Category":"Mobile",
-     },
-     {"productId":3,
-      "ProductName":"Dell",
-      "Price":30000,
-      "Category":"Laptop",
-      },
-      {"productId":4,
-       "ProductName":"HP",
-       "Price":40000,
-       "Category":"Laptop",
-       }
+# # eg filter on bases on category
+# productList = [
+#     {
+#     "ProductId":1,
+#     "ProductName":"iPhone",
+#     "Price":10000,
+#     "Category":"Mobile",
+#     },
+#     {"productId":2,
+#      "ProductName":"Samsung",
+#      "Price":20000,
+#      "Category":"Mobile",
+#      },
+#      {"productId":3,
+#       "ProductName":"Dell",
+#       "Price":30000,
+#       "Category":"Laptop",
+#       },
+#       {"productId":4,
+#        "ProductName":"HP",
+#        "Price":40000,
+#        "Category":"Laptop",
+#        }
 
-    ]
+#     ]
 
-filterProducts = list(filter(lambda Products: Products["Category"] == "Mobile", productList))
-print(filterProducts)
+# filterProducts = list(filter(lambda Products: Products["Category"] == "Mobile", productList))
+# print(filterProducts)
 
+# # 19/03/2025
+
+# # Function Recursin
+
+# def f1(num):
+#     print(num)
+#     if num > 0:
+#         f1(num-1)
+# f1(4)
