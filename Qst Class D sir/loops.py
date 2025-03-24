@@ -24,8 +24,8 @@
 #     print(s[i], end=" ")
 # print()
 
-numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+# numList = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for i in numList:
-    if i % 2 == 0:
-        print(i, "is Even")
+# for i in numList:
+#     if i % 2 == 0:
+#         print(i, "is Even")
