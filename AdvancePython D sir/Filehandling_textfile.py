@@ -1,51 +1,3 @@
-# # 25 / 03 / 2025
-
-# # file handling
-# # how to open file in python 
-# #  syntay : ("filename", " opening mode")
-
-# # opening mode :
-# # w: write mode (new  file  is created)
-# # r: read mode (new flwe wont ceated)
-# # a: append mode (new file is created)
-
-# # example :
-# # Open the file "file.txt" in write mode ("w")
-# f = open("file.txt", "w")
-
-# # Print a message indicating that the file has been opened successfully
-# print("file is opened successfully")
-
-# # Check if the file is writable and print the result
-# print("is file writable : ", f.writable())
-
-# # Check if the file is readable and print the result
-# print("is file readable : ", f.readable())
-
-# # Print the name of the file
-# print("file name : ", f.name)
-
-# # Print the mode in which the file was opened (in this case, 'w' for write)
-# print("file mode : ", f.mode)
-
-# # Check if the file is closed and print the result (it should be False right now)
-# print("is file closed : ", f.closed)
-
-# # Close the file
-# f.close()
-
-# # Check if the file is closed after calling close() and print the result (it should be True now)
-# print("file is closed : ", f.closed)
-
-
-
-
-
-
-
-
-
-
 
 # # Writing data into the file :
 # # Open the file "file.txt" in write mode ("w")
@@ -179,13 +131,14 @@ print('file pointer location : ', f.tell())
 print(f.read(4))
 print('file pointer location : ', f.tell())
 
+##  moving file pointer a a specific location 
 
-# f.seek(12) : moving file pointer a a specific location 
+# # f.seek(12) :
 
-print(f.read(4))
+# print(f.read(4))
 
-f=open('f5.txt','w')
-f.write("All Students are stupid")
-f.seek(17)
-f.write("Smart!!!!")
-f.close()
+# f=open('f5.txt','w')
+# f.write("All Students are stupid")
+# f.seek(17)
+# f.write("Smart!!!!")
+# f.close()
