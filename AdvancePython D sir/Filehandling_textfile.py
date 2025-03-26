@@ -122,14 +122,14 @@
 
 # #tell(): it will return current position of file pointer
 
-f=open('f1.txt','r')
-print('File Pointer Location : ' ,f.tell())
-print(f.read(2))
-print('file pointer location : ', f.tell())
-print(f.read(2))
-print('file pointer location : ', f.tell())
-print(f.read(4))
-print('file pointer location : ', f.tell())
+# f=open('f1.txt','r')
+# print('File Pointer Location : ' ,f.tell())
+# print(f.read(2))
+# print('file pointer location : ', f.tell())
+# print(f.read(2))
+# print('file pointer location : ', f.tell())
+# print(f.read(4))
+# print('file pointer location : ', f.tell())
 
 ##  moving file pointer a a specific location 
 
