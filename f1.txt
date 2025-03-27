@@ -1,2 +1,5 @@
-
-Hello sir good morning welcome to quality software technology
+apple is Fruit 
+banana is Fruit
+cat is amimal
+ball is toy
+animal is beautyfull
