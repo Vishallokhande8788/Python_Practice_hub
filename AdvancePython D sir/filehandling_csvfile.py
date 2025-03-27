@@ -20,38 +20,49 @@
 ## eg : write data how  many produst do you want to save
 
 
-import csv
+# import csv
 
-# Open the file in write mode
-f = open('product.csv', 'w', newline='')
+# # Open the file in write mode
+# f = open('product.csv', 'w', newline='')
 
-# Create a CSV writer object
-csv_writer = csv.writer(f)
+# # Create a CSV writer object
+# csv_writer = csv.writer(f)
 
-# Write the header row
-csv_writer.writerow(["Pid", "Product Name", "Price", "Quantity"])
+# # Write the header row
+# csv_writer.writerow(["Pid", "Product Name", "Price", "Quantity"])
 
-# Initialize product id
-pid = 101
+# # Initialize product id
+# pid = 101
 
-# Ask the user for the number of products to save
-userChoice = int(input("How many products do you want to save: "))
+# # Ask the user for the number of products to save
+# userChoice = int(input("How many products do you want to save: "))
 
-# Loop to take user input for each product
-for i in range(userChoice):
-    productName = input("Enter product name: ")
-    price = float(input("Enter product price: "))
-    quantity = int(input("Enter product quantity: "))
+# # Loop to take user input for each product
+# for i in range(userChoice):
+#     productName = input("Enter product name: ")
+#     price = float(input("Enter product price: "))
+#     quantity = int(input("Enter product quantity: "))
     
-    # Write the product details to the CSV file
-    csv_writer.writerow([pid, productName, price, quantity])
+#     # Write the product details to the CSV file
+#     csv_writer.writerow([pid, productName, price, quantity])
     
-    # Increment the product id
-    pid += 1
+#     # Increment the product id
+#     pid += 1
 
-# Close the file
-f.close()
+# # Close the file
+# f.close()
 
-# Print success message
-print("Products saved successfully!")
+# # Print success message
+# print("Products saved successfully!")
 
+
+
+# # 26/03/2025
+# # read data from csv file
+# import csv
+# f = open('product.csv', 'r')
+# data = csv.reader(f) 
+# for rec in data:
+#     for record in rec:
+#         print(record , end=" ") # end is used to add space between the words 
+#     print()
