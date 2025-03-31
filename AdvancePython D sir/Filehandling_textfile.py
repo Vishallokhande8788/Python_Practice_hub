@@ -142,3 +142,42 @@
 # f.seek(17)
 # f.write("Smart!!!!")
 # f.close()
+
+
+
+# 31/03/22025
+
+# # eg - create a text file  f6.text and count  words and character in f6.txt 
+
+# # Step 1: Create and write to the file 'f6.txt'
+# a = open('f6.txt', 'w')
+# a.write("vishal lokhande hi \n")
+# a.write("123456 7 8 9\n")
+# a.close()
+
+# # Step 2: Open the file in read mode
+# b = open('f6.txt', 'r')
+
+# # Initialize counters
+# word_count = 0
+# char_count = 0
+
+# # Read the file line by line
+# for line in b:
+#     # Split the line into words
+#     words = line.split()
+#     word_count += len(words)  # Count the number of words
+#     char_count += len(line)   # Count the characters (including spaces and newlines)
+
+# # Close the file after reading
+# b.close()
+
+# # Step 3: Print the results
+# print(f"Total words: {word_count}")
+# print(f"Total characters (including spaces and newlines): {char_count}")
+
+
+
+
+
+
