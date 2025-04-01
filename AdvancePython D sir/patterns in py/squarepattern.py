@@ -32,12 +32,69 @@
 #     print()
 
 
-f = int(input("Enter a number: "))
+# f = int(input("Enter a number: "))
 
-# Outer loop to handle rows
-for i in range(f):
-    # Inner loop to print numbers from f to 1
-    for j in range(f-1, -1, -1):
-        print(str(j+1), end=' ')  # Print numbers separated by a single space
-    print()  # Newline after each row
+# # Outer loop to handle rows
+# for i in range(f):
+#     # Inner loop to print numbers from f to 1
+#     for j in range(f-1, -1, -1):
+#         print(str(j+1), end=' ')  # Print numbers separated by a single space
+#     print()  # Newline after each row
 
+
+# g = int(input("Enter a number: "))
+# for i in range(g):
+#     print('* ' * (i+1))
+
+
+# h = int(input("Enter a number: "))
+# for i in range(h-1,-1,-1):
+#     print("* " * (i-1))
+
+
+# j =int(input('enter a no :' ))
+# for i in range(j-1,-1,-1) :
+#     print((chr(i+65) + " ") * (i+1) )
+
+
+# k = int(input("enter a no : "))
+# for i in range(k):
+#     print(((chr(k-i+65)) + ' ' ) * (i+1))
+
+#  reversed 
+
+# k = int(input("enter a no : "))
+# for i in range(k):
+#     print((chr(k-i+64) + " ") * (i+1))
+
+# l = int(input("enter a no : "))
+# for i in range(l):
+#     for j in range(i):
+#         print((j ) , end=' ')
+#     print()
+
+# l = int(input("enter a no : "))
+# for i in range(l):
+#     for j in range(i):
+#         print(chr(j + 65 ) , end=' ')
+#     print()5z
+
+
+# m = int(input("enter a no : "))
+# for i in range(m):
+#     for j in range(i):
+#         print(chr(m-j+64) , end=" ")
+#     print()
+
+# reverce 
+
+
+# m = int(input("enter a no : "))
+# for i in range(m-1,-1,-1):
+#     for j in range(i):
+#         print(chr(m-j+64) , end=" ")
+#     print()
+
+n = int(input("enter a no : "))
+for i in range(n):
+    print((str(n + 1) + " " ) * (i+1) )
