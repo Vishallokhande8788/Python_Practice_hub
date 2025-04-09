@@ -1,0 +1,22 @@
+eg of object che proprerty / behaviour 
+
+object = keyboard / mouse / etc
+proprerty = color  / size / shape / position /  etc
+
+behaviour = move / rotate / change color / etc
+
+object = Ac
+proprerty = color 
+behaviour = cooling 
+
+
+object = light bulb
+proprerty = color , size , shape , position
+behaviour = change color , change size , change shape , change position , etc
+
+object = mobiles
+proprerty = color , size , shape , position , speed
+behaviour = change color , change size , change shape , change position , change speed , etc
+
+
+
