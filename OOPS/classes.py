@@ -59,38 +59,12 @@
 
     
 
-# instance variable
+
+
+#static variable
 #  global variable
 #  local variable
-# what is instance variable
-# when instance variable created or destroyed
-# what is memory management / what is garbage collection
-# where we can create a instance variable (in constructor , instance method by using self)
 
-
-
-
-# where we can create a instance variable 
-class Test:
-    def __init__(self):
-        self.a=10
-
-        def m1(self):
-            self.b = 20
-
-
-t = Test()
-print(t.__dict__)
-
-t.m1()
-print(t.__dict__)
-t.c =30 
-print(t.__dict__)
-print('.....t2.....')
-
-t2 = Test()
-print(t2.__dict__)
-print(t2.a)
 
 
         
