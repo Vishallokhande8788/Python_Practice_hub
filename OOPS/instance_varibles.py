@@ -67,29 +67,3 @@ print(t2.__dict__ )
 
 
 
-
-class Bank:
-    def __init__(self, bank_name, acc_holder_name, acc_no, acc_balance):
-        self.bank_name = bank_name
-        self.acc_holder_name = acc_holder_name
-        self.acc_no = acc_no
-        self.acc_balance = acc_balance
-
-    def display_details(self):
-        print("\n--- Account Details ---")
-        print('Bank Name:', self.bank_name)
-        print('Account Holder Name:', self.acc_holder_name)
-        print('Account No:', self.acc_no)
-        print('Account Balance:', self.acc_balance)
-        print('------------------------\n')
-
-    def withdraw(self, withdraw_amount):
-        if withdraw_amount > self.acc_balance:
-            print(f"❌ Your balance is insufficient to withdraw ₹{withdraw_amount}. Current balance: ₹{self.acc_balance}")
-        else:
-            self.acc_balance -= withdraw_amount
-            print(f"✅ ₹{withdraw_amount} withdrawn successfully. New balance: ₹{self.acc_balance}")
-
-    def deposit(self, deposit_amount):
-        self.acc_balance += deposit_amount
-        print(f"✅ Your A/C No: {self.acc_no} has been credited with ₹{deposit_amount}. Total balance is ₹{self.acc_balance}")
