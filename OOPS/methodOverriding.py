@@ -27,7 +27,9 @@
 # - Happens in **inheritance**.
 # - Allows **runtime polymorphism** (dynamic method dispatch).
 
-### Example in Python:
+### Example
+
+'''
 class Animal:
     def speak(self):
         print("Animal speaks")
@@ -41,3 +43,40 @@ d.speak()  # Output: Dog barks
 
 
 # Let me know if you want this in another language or need a deeper explanation!
+'''
+
+class shape:
+    def area(self):
+        print('area is xyz ....')
+
+class square:
+    def area(shape):
+        print('side square ')
+        print('ok')
+
+class rectangle :
+    def area(shape):
+        print("l * b ")
+
+class cirle:
+    def area (shape):
+        print("paya r square ")
+
+class cone :
+    def area(self):
+        print("i am a cone ")
+
+s= shape()
+s.area()
+
+s = square()
+s.area()
+
+r = rectangle()
+r.area()
+
+c = cirle()
+c.area()
+
+c = cone()
+c.area()
