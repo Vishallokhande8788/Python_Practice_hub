@@ -27,7 +27,7 @@ print(p3.x, p3.y)  # Output: 4 6
 - `__lt__` for `<`, etc.
 '''
 
-
+''' 
 print(10+20)
 print('java' + " python")
 
@@ -49,3 +49,21 @@ b3 = Book(600)
 
 print("Total pages : " , b1 + b2 )
 print("Total pages : " , b2 + b3)
+'''
+
+
+class Employee:
+    def __init__(self, name, salary):
+        self.name = name
+        self.salary = salary
+
+    def __gt__ (self , other):
+        print('greater than magic method called ')
+        return self.salary > other.salary
+    
+e1 = Employee('John' , 1000)
+e2 = Employee('Tom' , 2000)
+e3 = Employee('Jack' , 3000)
+
+print(e1 > e2)
+print(e2 > e3)  

@@ -43,7 +43,7 @@ d.speak()  # Output: Dog barks
 
 
 '''
-
+'''
 class shape:
     def area(self):
         print('area is xyz ....')
@@ -79,3 +79,35 @@ c.area()
 
 c = cone()
 c.area()
+'''
+
+
+class Mobile:
+    def call(self):
+        print(" mobile Calling..")
+
+class BasicMobile:
+    def call(Mobile):
+        print(' Basic MObile  Calling ')
+
+class SmartPhone:
+    def call (Mobile):
+        print(" Smart Phone Calling")
+
+class iphone:
+    def call (self):
+        print("i phone ")
+
+m = Mobile()
+m.call()
+
+b = BasicMobile()
+b.call()
+
+s = SmartPhone()
+s.call()
+
+i = iphone()
+i.call()
+
+
