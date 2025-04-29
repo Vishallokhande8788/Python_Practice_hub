@@ -55,5 +55,4 @@ def speedTest(vehicleList):
 vehicles = [Hero(), Honda(), Bajaj(), Fortuner()]
 speedTest(vehicles) 
 '''
-    
-
+# Let me know if you want this in another language or need a deeper explanation!

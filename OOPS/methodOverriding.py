@@ -42,7 +42,6 @@ d = Dog()
 d.speak()  # Output: Dog barks
 
 
-# Let me know if you want this in another language or need a deeper explanation!
 '''
 
 class shape:
