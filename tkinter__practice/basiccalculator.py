@@ -1,4 +1,25 @@
 from tkinter import *
+import tkinter.messagebox as msg5
+
+
+def add():
+    print('hi')
+    result.set(no1.get() + no2.get())
+
+    msg5.showinfo('tttt','hello show info')
+    msg5.showerror('tttt','hello show error')
+    msg5.showwarning('ttt','hello show warning')
+
+def sub():
+    result.set(no1.get() - no2.get())
+
+def mul():
+    result.set(no1.get() * no2.get())
+
+def dive():
+    result.set(no1.get() // no2.get())
+
+
 root =Tk()
 root.geometry("700x300")
 root.title("this is my first tkinter frame")
@@ -43,17 +64,21 @@ root.title("this is my first tkinter frame")
 # b3.grid(row=2, column=2)
 # b4.grid(row=3, column=3)
 
+no1 = IntVar()
+no2 = IntVar()
+result = IntVar()
 
 #  basic calculator
 msg = Label(
     text='No 1',
     font=('Times New Roman', 20, 'bold'),
     padx=100,
-    pady=10,
+    pady=10
 )
 input = Entry(
     borderwidth=6,
-    relief = 'sunken'
+    relief = 'sunken',
+    textvariable=no1
 
 )
 
@@ -66,7 +91,8 @@ msg1 = Label(
 )
 input1 = Entry(
     borderwidth=6,
-    relief = 'sunken'
+    relief = 'sunken',
+    textvariable=no2
 
 )
 msg2 = Label(
@@ -78,31 +104,35 @@ msg2 = Label(
 )
 input2 = Entry(
     borderwidth=6,
-    relief = 'sunken'
+    relief = 'sunken',textvariable=result
 
 )
 
 b = Button(
     text='+',
     padx=30,
-    pady=10
+    pady=10,
+    command=add
 )
 
 b1 = Button(
     text='-',
     padx=30,
-    pady=10
+    pady=10,
+    command=sub
 )
 
 b2 = Button(
     text='*',
     padx=30,
-    pady=10
+    pady=10,
+    command=mul
 )
 b3 = Button(
     text='/',
     padx=30,
-    pady=10
+    pady=10,
+    command=dive
 )
 
 
@@ -119,6 +149,7 @@ b.grid(row = 3 , column=9)
 b1.grid(row = 3 , column=10)
 b2.grid(row = 3 , column=12)
 b3.grid(row =  3, column=14)
+
 
 
 
