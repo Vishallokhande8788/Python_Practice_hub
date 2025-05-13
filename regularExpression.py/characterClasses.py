@@ -30,3 +30,6 @@ matcher = re.finditer('[a-z]' , 'a5b1C3cDT$%t @73A 8788')
 
 for match in matcher:
     print(match.start(), ',,,,,,,,,,,', match.end(), ',,,,,,,,,,,', match.group())  
+
+
+
