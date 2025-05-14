@@ -100,12 +100,12 @@ else:
     
 '''
 import re 
-pattern = '[MH][0-4][A-Z][0-9]\d{4}'
+pattern = '[M][H][0][0-4][A-Z][A-Z][0-9]{4}'
 
 noplate = input ("Enter a no ")
 
 m=re.fullmatch(pattern , noplate)
 if m!=None:
-    print("valid noplate ")
+    print("valid no plate ")
 else:
-    print("invalid  noplate ")
+    print("invalid  no plate ")
