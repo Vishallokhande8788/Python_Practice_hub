@@ -1,19 +1,67 @@
 <!DOCTYPE html>
 {% load static %}
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MY PAGE</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-    <link rel = "stylesheet" href="{% static 'index.css' %}">
 
-</head>
-<body>
-    <H1>Hello World</H1>
-    <p>This is my first page</p>
-    <button type="button" class="btn btn-primary">Primary</button>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
 
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="{% static 'index.css' %}" />
+  </head>
 
-</body>
+  <body>
+    <div class="container mt-5">
+      <h1>Hello World</h1>
+      <p>This is my first page</p>
+      <button type="button" class="btn btn-primary">Primary</button>
+      <button class="but btn btn-success mt-3">Click Me</button>
+    </div>
+    <ul>
+      <li>name: {{ name }}</li>
+      <li>age: {{ age }}</li>
+      <li>gender: {{ gender }}</li>
+      <li>city: {{ city }}</li>
+      <li>country: {{ country }}</li>
+      <li>hobby: {{ hobby }}</li>
+    </ul>
+    <h2>Employee List</h2>
+
+    <table border="1" cellpadding="8" cellspacing="0">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Salary</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for emp in emplist %}
+        <tr>
+          <td>{{ emp.ename }}</td>
+          <td>{{ emp.esal }}</td>
+          <td>{{ emp.eadd }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8"
+      crossorigin="anonymous"
+    ></script>
+    <!-- JS file should always be before </body> -->
+
+    <script src="{% static 'js/index.js' %}" defer></script>
+  </body>
 </html>
