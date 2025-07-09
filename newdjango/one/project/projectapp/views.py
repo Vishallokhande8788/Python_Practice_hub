@@ -3,4 +3,4 @@ from projectapp.models import Employee
 # Create your views here.
 def emp_list_view(request):
     emplist = Employee.objects.all()
-    return render(request, "index.html", {"emplist":emplist})
+    return render(request, "index.html", context={"emplist":emplist})

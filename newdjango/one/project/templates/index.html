@@ -8,7 +8,7 @@
 <body>
     <h1>hello django</h1>
     <h2>Employee list </h2>
-    {% if not Emplist %}
+    {% if not emplist %}
         <p>No employee found</p>
     {% else %}
         <table border="1">
@@ -17,7 +17,7 @@
                 <th>Salary</th>
                 <th>Address</th>
             </tr>
-            {% for emp in Emplist %}
+            {% for emp in emplist %}
                 <tr>
                     <td>{{emp.ename}}</td>
                     <td>{{emp.esal}}</td>
