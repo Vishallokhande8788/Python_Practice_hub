@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faker</title>
+</head>
+<body>
+
+    <h1>Students records</h1>
+    <table class="table" border="1">
+        <tr>
+            <th>SID</th>
+            <th>SName</th>
+            <th>SMarks</th>
+        </tr>
+
+        {% for student in stu_list %}
+        <tr>
+            <td>{{student.sid}}</td>
+            <td>{{student.sname}}</td>
+            <td>{{student.smarks}}</td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
