@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> welcome to home page </h1>
+    <form method="post" enctype="multipart/form-data">
+        {{ form.as_p }} {% csrf_token%}
+        <input type="submit" value="Add Emp">
+    </form>
+    <table class="table" border="1">
+    <th>id</th>
+    <th>ename</th>
+    <th>esal</th>
+    <th>eimg</th>
+    {% for emp in emps %}
+        <tr>
+            <td>{{emp.eid}}</td>
+            <td>{{emp.ename}}</td>
+            <td>{{emp.esal}}</td>
+            <td><img src="{{emp.eimg.url}}"></td>
+        </tr>
+    {% endfor %}    
+    </table>
+</body>
+</html>
