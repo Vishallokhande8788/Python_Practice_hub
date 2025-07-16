@@ -17,8 +17,10 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path
-fr
-
+from classviewsapp import views
 urlpatterns = [
     path("admin/", admin.site.urls),
+    path("hello/", views.HelloView.as_view()),
+    path("temp/", views.BeerListView.as_view()),
+    path("create/", views.BeerCreateView.as_view()),
 ]
