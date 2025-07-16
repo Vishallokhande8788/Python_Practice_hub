@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>modelList</title>
+</head>
+<body>
+    
+<h1>modelList</h1>
+<table border="1" style="width:50% ; text-align:center ">
+<tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Address</th>
+    <th>Image</th>
+</tr>
+{% for model in modelList %}
+<tr>
+    <td>{{ model.name }}</td>
+    <td>{{ model.age }}</td>
+    <td>{{ model.gender }}</td>
+    <td>{{ model.address }}</td>
+    <td><img src="{{ model.image.url }}" alt="image" width="200" height="200"></td>
+</tr>
+{% endfor %}
+
+
+</table>
+
+</table>
+</body>
+</html>
