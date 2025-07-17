@@ -23,4 +23,8 @@ urlpatterns = [
     path("hello/", views.HelloView.as_view()),
     path("temp/", views.BeerListView.as_view()),
     path("create/", views.BeerCreateView.as_view()),
+    path("List/", views.BeerListView.as_view() , name="list"),
+    path("detail/<int:pk>/", views.BeerUpdateView.as_view()),
+    path("update/<int:pk>/", views.BeerUpdateView.as_view()),
+    path ("delete/<int:pk>/", views.BeerUpdateView.as_view()),
 ]

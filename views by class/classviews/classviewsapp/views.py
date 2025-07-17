@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.views import View
 from django.http import HttpResponse
-from classviewsapp import beer
+from classviewsapp.models import beer
 from django.views.generic import TemplateView , CreateView
 # Create your views here.
 
@@ -24,3 +24,12 @@ class BeerListView(TemplateView):
 class BeerCreateView(CreateView):
     model = beer
     fields = "__all__"
+
+class BeerListView(View):
+    model = beer
+
+
+class BeerUpdateView(View):
+    model = beer
+    fields = "__all__"
+    
