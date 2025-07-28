@@ -24,4 +24,6 @@ urlpatterns = [
     path("" , views.home),
     path('pyExam/', views.pyExam),
     path ('accounts/' , include ('django.contrib.auth.urls')),
+    path('javaExam/', views.javaExam),
+    path('jsExam/', views.jsExam),
 ]
