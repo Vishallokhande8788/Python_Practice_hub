@@ -81,10 +81,11 @@ DATABASES = {
         'NAME': 'SqlDjango',
         'USER': 'root',
         'PASSWORD': 'Vishal@8788',
-        'HOST': 'localhost',
+        'HOST': '127.0.0.1',
         'PORT': '3306',
     }
 }
+
 
 
 
