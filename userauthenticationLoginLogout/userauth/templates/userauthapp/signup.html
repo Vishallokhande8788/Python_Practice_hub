@@ -1,0 +1,9 @@
+<!DOCTYPE html>
+{%extends 'userauthapp/home.html'%} {%block bodyblock%}
+<h1>Welcome to Signup Page</h1>
+<form method="post">
+  {% csrf_token %} {{ form.as_p }}
+  <button type="submit">Submit</button>
+  <a href="/accounts/login">Login</a>
+</form>
+{%endblock%}

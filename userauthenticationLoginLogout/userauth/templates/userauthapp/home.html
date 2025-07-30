@@ -10,22 +10,24 @@
     />
   </head>
   <body>
+    <h3>Welcome {{ user.username }}</h3>
     <nav class="navbar bg-light px-2 d-flex justify-content-between">
       <div class="d-flex align-items-center gap-1">
         <a class="navbar-brand" href="/">Home</a>
-        <a class="btn btn-sm " href="/pyExam">Py Exam</a>
-        <a class="btn btn-sm " href="/javaExam">Java Exam</a>
-        <a class="btn btn-sm " href="/jsExam">JS Exam</a>
+        <a class="btn btn-sm" href="/pyExam">Py Exam</a>
+        <a class="btn btn-sm" href="/javaExam">Java Exam</a>
+        <a class="btn btn-sm" href="/jsExam">JS Exam</a>
       </div>
       <div class="d-flex align-items-center gap-1">
-        <a class="btn btn-sm btn-outline-success" href="/accounts/login"
-          >Login</a
-        >
         <form action="/accounts/logout/" method="post" class="d-inline">
           {% csrf_token %}
           <button type="submit" class="btn btn-sm btn-outline-danger">
             Logout
           </button>
+          <a class="btn btn-sm btn-outline-success" href="/accounts/login"
+            >Login</a
+          >
+          <a href="/signup">Signup</a>
         </form>
       </div>
     </nav>
