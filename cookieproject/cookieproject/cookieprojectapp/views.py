@@ -1,18 +1,27 @@
 from django.shortcuts import render
 
 # Create your views here.
-def home(request):
-    return render(request,'cookieprojectapp/home.html')
+# def home(request):
+#     return render(request,'cookieprojectapp/home.html')
 
-def pageCount(request):
-    if 'count' in request.COOKIES:
-        if 'count' in request.COOKIES:
-            newcount = int(request.COOKIES['count'])+1
-        else :
-            newcount = 1
+# def pageCount(request):
+#     if 'count' in request.COOKIES:
+#         if 'count' in request.COOKIES:
+#             newcount = int(request.COOKIES['count'])+1
+#         else :
+#             newcount = 1
 
-        request.COOKIES['count'] = newcount
-        response = render(request,'cookieprojectapp/count.html',{'count':newcount})
-        response.set_cookie('count',newcount)
-        return response
+#         request.COOKIES['count'] = newcount
+#         response = render(request,'cookieprojectapp/count.html',{'count':newcount})
+#         response.set_cookie('count',newcount)
+#         return response
     
+
+
+    # by using session cokies we can store the count in the browser
+
+    def count_view(request):
+    newcount = request.session.get('count',0)
+    newcount = newcount+1
+    request.session['count'] = newcount
+    return render(request,'cookieprojectapp/count.html',{'count':newcount})
