@@ -1,0 +1,21 @@
+{% load static%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title  %}
+        
+       layout title 
+        {% endblock %}</title>
+    <link rel='stylesheet' href={% static 'style.css' %} >
+</head>
+<body>
+    <h1>i am layout view  </h1>
+    <h1>i am a nav bar <h1>
+    {% block content %}
+    
+    <h2> i am a layout outside block<h2>
+    {% endblock %}
+</body>
+</html> 
