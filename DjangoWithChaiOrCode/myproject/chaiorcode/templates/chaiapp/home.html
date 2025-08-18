@@ -1,15 +1,28 @@
-{% load static %}
+{% load tailwind_tags %}
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hiiii</title>
-</head>
-<link rel="stylesheet" href={%static 'style.css' %} >
-<body>
-    <h1>home view</h1>
-    <button><a href="hello/" >for hellow view click here button 1</button>
-    <button><a href="hel/" >for hellow view click here button 2 </button>
-</body>
+
+    {% tailwind_css %}
+  </head>
+  <body class="bg-gray-100 p-6">
+    <h1 class="text-4xl font-bold text-blue-600 mb-4">Hello Tailwind!</h1>
+    <h1 class="text-lg">home view</h1>
+    <h1 class="text-red-500 mb-4">i am home view</h1>
+
+    <button
+      class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600"
+    >
+      <a href="hello/">for hello view click here button 1</a>
+    </button>
+
+    <button
+      class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 ml-2"
+    >
+      <a href="hel/">for hello view click here button 2</a>
+    </button>
+  </body>
 </html>

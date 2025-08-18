@@ -17,7 +17,7 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path , include 
-from chaiapp import views 
+from chaiapp import views  
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -25,5 +25,9 @@ urlpatterns = [
     path("hello/" ,views.hello , name='hello'),
     path("index/", include('chaiapp.urls')),
     path('layout/',views.layout , name='layout'),
+
+
+
+    path("__reload__/", include("django_browser_reload.urls")),
 
 ]

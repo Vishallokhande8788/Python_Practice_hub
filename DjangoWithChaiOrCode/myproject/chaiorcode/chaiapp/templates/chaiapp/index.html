@@ -1,13 +1,18 @@
-<h1>i am index view <h1>
-{% extends "chaiapp/layout.html" %}
+<h1>
+  i am index view
+  <h1>
+    {% extends "chaiapp/layout.html" %} {% block title %} chai page {% endblock
+    %}\
 
-
-{% block title %}
-chai page 
-{% endblock %}
-
-<h1> i am a index page<h1>
-{% block content %}
-<h1> i am a index.html file | chai code <h1>
-{% endblock %}
-
+    <h1 class="text-blue-600">
+      i am a index page
+      <h1>
+        {% block content %}
+        <h1 class="text-red-500">
+          i am a index.html file | chai code
+          <h1>{% endblock %}</h1>
+        </h1>
+      </h1>
+    </h1>
+  </h1>
+</h1>
