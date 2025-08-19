@@ -25,8 +25,9 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("" , views.home , name='home'),
     path("hello/" ,views.hello , name='hello'),
-    path("index/", include('chaiapp.urls')),
     path('layout/',views.layout , name='layout'),
+    path("index/", include('chaiapp.urls')),
+
 
 
 

@@ -1,18 +1,28 @@
-<h1>
-  i am index view
-  <h1>
-    {% extends "chaiapp/layout.html" %} {% block title %} chai page {% endblock
-    %}\
+{% extends "chaiapp/layout.html" %}
 
-    <h1 class="text-blue-600">
-      i am a index page
-      <h1>
-        {% block content %}
-        <h1 class="text-red-500">
-          i am a index.html file | chai code
-          <h1>{% endblock %}</h1>
-        </h1>
-      </h1>
-    </h1>
-  </h1>
-</h1>
+{% block title %}
+  Chai Page
+{% endblock %}
+
+{% block content %}
+  <h1 class="text-blue-600">I am index view</h1>
+  <h1 class="text-red-500">I am index.html file | chai code</h1>
+
+  <div class="grid grid-cols-3 gap-4">
+    {% for chai in chais %}
+      <div class="bg-gray-500 rounded-lg shadow-md p-4">
+        {% if chai.image %}
+          <img src="{{ chai.image.url }}" alt="{{ chai.name }}" class="w-full h-48 object-cover rounded-t-lg"/>
+        {% endif %}
+        
+        <p class="text-white text-center font-bold mt-2">{{ chai.name }}</p>
+        <p class="text-white text-center">{{ chai.type }}</p>
+        <p class="text-white text-center text-sm">{{ chai.date_added }}</p>
+        
+        <div class="text-center mt-3">
+          <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">  <a href="{% url 'chai_detail' chai.id %}">View Chai</a></button>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+{% endblock %}
