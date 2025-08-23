@@ -22,6 +22,6 @@ urlpatterns = [
     path("" ,views.index , name='index'),
     path("one/" ,views.index , name='index'),
     path("hello/" ,views.hello , name='hello'),
-    path("<int:chai_id>/" , views.chai_detail , name='chai_detail'), 
+    path("<int:chai_id>/" , views.chai_detail , name='chai_detail'),
 
 ]
