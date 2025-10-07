@@ -12,3 +12,4 @@ def students(request):
         }
     ]
     return HttpResponse(students_list)
+    
