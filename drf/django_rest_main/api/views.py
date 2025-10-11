@@ -55,3 +55,5 @@ def studentDetailView(request, pk):
         serializer = StudentSerializer(student)
         # Return serialized student data with HTTP 200 OK
         return Response(serializer.data, status=status.HTTP_200_OK)
+
+
