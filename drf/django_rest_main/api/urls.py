@@ -8,3 +8,10 @@ urlpatterns = [
     # URL for getting a single student by ID (GET)
     path('students/<int:pk>/', views.studentDetailView),
 ]
+
+
+
+
+
+
+  
