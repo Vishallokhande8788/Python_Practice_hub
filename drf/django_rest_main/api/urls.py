@@ -12,6 +12,9 @@ urlpatterns = [
     # When the client requests 'employees/', it will be handled by the Employees class-based view
     path('employees/', views.Employees.as_view()),
 
+    # by Getting url using primary key (pk)
+    path('employees/<int:pk>/', views.Employees.as_view()), 
+
 ]
 
 
