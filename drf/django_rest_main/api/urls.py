@@ -7,6 +7,11 @@ urlpatterns = [
 
     # URL for getting a single student by ID (GET)
     path('students/<int:pk>/', views.studentDetailView),
+
+    # URL pattern for the Employees API view
+    # When the client requests 'employees/', it will be handled by the Employees class-based view
+    path('employees/', views.Employees.as_view()),
+
 ]
 
 
