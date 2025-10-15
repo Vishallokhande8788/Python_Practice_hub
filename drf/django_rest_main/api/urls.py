@@ -13,7 +13,7 @@ urlpatterns = [
     path('employees/', views.Employees.as_view()),
 
     # by Getting url using primary key (pk)
-    path('employees/<int:pk>/', views.EmployeesDetail.as_view()),
+    path('employees/<int:pk>/', views.EmployeeDetail.as_view()),
 
 ]
 
