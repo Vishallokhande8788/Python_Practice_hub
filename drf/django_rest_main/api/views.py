@@ -10,6 +10,7 @@ from employees.models import Employee
 from .serializers import EmployeeSerializer
 from django.http import Http404
 from rest_framework import mixins , generics
+from rest_framework.generics import CreateAPIView , RetrieveAPIView , UpdateAPIView , DestroyAPIView , ListAPIView 
 
 # ---------------------------
 # API View for all students
@@ -142,5 +143,11 @@ def studentDetailView(request, pk):
 
 #  generic-based view for Employees
 
-class Employees(generics.ListAPIView):
-    
+class Employees(generics.ListAPIView , CreateAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
+
+class EmployeeDetail(generics.RetrieveUpdateDestroyAPIView):
+    queryset = Employee.objects.all()
+    serializer_class = EmployeeSerializer
+    lookup_field = 'pk'
