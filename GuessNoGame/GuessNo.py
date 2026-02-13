@@ -34,3 +34,14 @@ def play_game():
             print(f"🎉 Congratulations! You guessed the number {number_to_guess} in {attempts} attempts!")
             break
 
+def main():
+    welcome_message()
+    while True:
+        play_game()
+        replay = input("Do you want to play again? (yes/no): ").strip().lower()
+        if replay != "yes":
+            print("Thanks for playing! Goodbye!")
+            break
+
+if __name__ == "__main__":
+    main()
