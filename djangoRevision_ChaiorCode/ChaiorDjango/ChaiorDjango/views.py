@@ -14,3 +14,9 @@ def contact(request):
 
 def htmlPage(request):
     return render(request , "website/index.html")
+
+def ok(request):
+    return render(request , "website/ok.html")
+
+def order(request):
+    return render (request , "website/order.html")
