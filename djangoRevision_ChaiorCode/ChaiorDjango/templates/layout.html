@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <title>{% block title %} default title {% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+<nav> this is nav bar </nav>
+<h2> i am a common header </h2>
+
+{% block content %}
+<h1> i am a layout page internal text </h1>
+{% endblock %}
+
+</body>
+</html>
