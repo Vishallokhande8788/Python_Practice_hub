@@ -38,7 +38,11 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "Chai",
+    "tailwind",
+    "apptailwind",
+
 ]
+TAILWIND_APP_NAME = "apptailwind"
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
