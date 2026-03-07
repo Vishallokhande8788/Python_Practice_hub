@@ -18,6 +18,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path , include
 from .import views
+from django.conf import settings
+from django.conf.urls.static import static
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("home/" , views.home , name='home'),
@@ -26,10 +29,14 @@ urlpatterns = [
     path("htmlpage/",views.htmlPage,name='htmlpage'),
     path('ok/',views.ok,name='ok'),
     path('order/',views.order,name='order'),
+    path('tailwind/',views.tailwind,name='tailwind'),
+
+    path("__reload__/", include("django_browser_reload.urls")),
+
 
     path("chai/", include('Chai.urls')),
     path('chai' , include('Chai.urls') , name='coffee'),
     path('' , include('Chai.urls') , name='redirect')
 
 
-]
+] + static(settings.MEDIA_URL , document_root=settings.MEDIA_ROOT)

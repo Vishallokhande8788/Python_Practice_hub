@@ -1,6 +1,7 @@
 from django.http import HttpResponse
 from  django.shortcuts import render
 
+
 def home(request):
     return HttpResponse("hello you are at home ")
 
@@ -20,3 +21,6 @@ def ok(request):
 
 def order(request):
     return render (request , "website/order.html")
+
+def tailwind(request):
+    return render(request , "../templates/base.html")
